@@ -86,6 +86,7 @@ public class Caminhao extends Automovel {
         return null;
     }
     
+    @Override
     // Abre o vidro do caminhao
     public Boolean abre_vidro(){
         this.vidro = true;
@@ -93,6 +94,7 @@ public class Caminhao extends Automovel {
         return true;
     }
     
+    @Override
     // Fecha o vidro do caminhao
     public Boolean fecha_vidro(){
         this.vidro = false;

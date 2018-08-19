@@ -85,7 +85,8 @@ public class Carro extends Automovel {
         System.out.println("Velocidade Atual: "+this.velocidade_atual); 
         return null;
     }    
-        
+    
+    @Override    
     // Abre o vidro do carro    
     public Boolean abre_vidro(){
         this.vidro = true;
@@ -93,6 +94,7 @@ public class Carro extends Automovel {
         return true;
     }
     
+    @Override
     // Fecha o vidro do carro
     public Boolean fecha_vidro(){
         this.vidro = false;

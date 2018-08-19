@@ -85,4 +85,18 @@ public class Carro extends Automovel {
         System.out.println("Velocidade Atual: "+this.velocidade_atual); 
         return null;
     }    
+        
+    // Abre o vidro do carro    
+    public Boolean abre_vidro(){
+        this.vidro = true;
+        System.out.println("O vidro está aberto!");
+        return true;
+    }
+    
+    // Fecha o vidro do carro
+    public Boolean fecha_vidro(){
+        this.vidro = false;
+        System.out.println("O vidro está fechado!");
+        return false;
+    }
 }

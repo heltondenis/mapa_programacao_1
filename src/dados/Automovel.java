@@ -15,17 +15,21 @@ public class Automovel {
      int roda; // Verifica a quantidade de rodas
      int portas; // Verifica a quantidade de portas
      int velocidade_atual; // Verifica a velocidade atual
+     Boolean vidro; // Verifica se o vidro está aberto ou fechado
+     int estacao; // Verifica a estação do rádio
 
   // Método Construtor, irá setar os valores padrões da classe
-  public Automovel(Boolean motor, int roda, int portas, int velocidade_atual){
+  public Automovel(Boolean motor, int roda, int portas, int velocidade_atual, Boolean vidro, int estacao){
         this.motor = motor;
         this.roda = roda;
         this.portas = portas;
         this.velocidade_atual = velocidade_atual;
+        this.vidro = vidro;
+        this.estacao = estacao;
     }
     
     public Automovel(){
-        this(false, 4, 4, 0);
+        this(false, 4, 4, 0, false, 1);
     }
     
     public void ligar(){
@@ -71,5 +75,5 @@ public class Automovel {
         // Velocidade atual do veículo
         System.out.println("Velocidade Atual: "+this.velocidade_atual); 
         return null;
-    }   
+    }
 }

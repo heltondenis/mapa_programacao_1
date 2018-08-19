@@ -47,10 +47,9 @@ public class main {
         cm.acelerar();
         cm.acelerar();
         System.out.println("Custo troca de pneus: R$"+cm.trocarPneus(4));
+        cm.abre_vidro();
         cm.exibeEstado();
         System.out.println("-------------------------");
-        
-        
     }
     
 }

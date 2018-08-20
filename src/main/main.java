@@ -31,6 +31,7 @@ public class main {
         c.ligar();
         c.acelerar();
         c.acelerar();
+        c.liga_radio();
         c.exibeEstado();
         System.out.println("-------------------------");
         
@@ -39,6 +40,7 @@ public class main {
         m.ligar();
         m.acelerar();
         m.acelerar();
+        c.liga_radio();
         m.exibeEstado();
         System.out.println("-------------------------");
         

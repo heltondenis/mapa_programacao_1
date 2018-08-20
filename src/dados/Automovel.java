@@ -16,20 +16,20 @@ public class Automovel {
      int portas; // Verifica a quantidade de portas
      int velocidade_atual; // Verifica a velocidade atual
      Boolean vidro; // Verifica se o vidro está aberto ou fechado
-     int estacao; // Verifica a estação do rádio
+     Boolean radio; // Verifica se o rádio está ligado
 
   // Método Construtor, irá setar os valores padrões da classe
-  public Automovel(Boolean motor, int roda, int portas, int velocidade_atual, Boolean vidro, int estacao){
+  public Automovel(Boolean motor, int roda, int portas, int velocidade_atual, Boolean vidro, Boolean radio){
         this.motor = motor;
         this.roda = roda;
         this.portas = portas;
         this.velocidade_atual = velocidade_atual;
         this.vidro = vidro;
-        this.estacao = estacao;
+        this.radio = radio;
     }
     
     public Automovel(){
-        this(false, 4, 4, 0, false, 1);
+        this(false, 4, 4, 0, false, false);
     }
     
     public void ligar(){
@@ -75,5 +75,30 @@ public class Automovel {
         // Velocidade atual do veículo
         System.out.println("Velocidade Atual: "+this.velocidade_atual); 
         return null;
+    }
+    
+    // Abre o vidro do automovel
+    public Boolean abre_vidro(){
+        this.vidro = true;
+        System.out.println("O vidro está aberto!");
+        return true;
+    }
+ 
+    // Fecha o vidro do automovel
+    public Boolean fecha_vidro(){
+        this.vidro = false;
+        System.out.println("O vidro está fechado!");
+        return false;
+    }
+    
+    public Boolean liga_radio(){
+        this.radio = true;
+        System.out.println("Ligando o rádio");
+        return true;
+    }
+    
+    public Boolean desliga_radio(){
+        this.radio = false;
+        return false;
     }
 }
